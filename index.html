@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Basit | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#020617;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  position:fixed;
+  width:100%;
+  background:rgba(2,6,23,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h2{color:#38bdf8;}
+nav a{
+  margin-left:20px;
+  color:#cbd5f5;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 10%;
+}
+
+.avatar{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  background:url('https://i.pravatar.cc/300') center/cover;
+  border:3px solid #38bdf8;
+  box-shadow:0 0 40px #38bdf8;
+  margin-bottom:20px;
+}
+
+.hero h1{font-size:42px;}
+.hero span{color:#38bdf8;}
+
+.hero p{
+  margin-top:10px;
+  color:#94a3b8;
+}
+
+.buttons{
+  margin-top:25px;
+}
+
+.btn{
+  padding:12px 20px;
+  margin:5px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+  display:inline-block;
+}
+
+.github{background:#111827;}
+.linkedin{background:#0a66c2;}
+.cv{background:#16a34a;}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+/* SECTION */
+.section{
+  padding:80px 10%;
+}
+
+.section h2{
+  margin-bottom:30px;
+  color:#38bdf8;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:15px;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* PROJECT */
+.project h3{margin-bottom:10px;}
+.project p{font-size:14px;color:#94a3b8;}
+
+.tags{
+  margin-top:10px;
+}
+.tag{
+  display:inline-block;
+  background:#1e293b;
+  padding:5px 10px;
+  border-radius:6px;
+  font-size:12px;
+  margin:3px;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  color:#38bdf8;
+  display:block;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#64748b;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Abdul Basit</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="avatar"></div>
+  <h1>Hi, I'm <span>Abdul Basit</span></h1>
+  <p>AI-Augmented Full Stack Trainee</p>
+  <p>I build real-world web systems, AI solutions & scalable applications</p>
+
+  <div class="buttons">
+    <a href="https://github.com/AbdulbasitKhan1947" class="btn github" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/abdul-basit-5b21a1276/" class="btn linkedin" target="_blank">LinkedIn</a>
+    <a href="CV Abdul Basit.pdf" class="btn cv" target="_blank">Download CV</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    Software Engineering student with hands-on experience in Full Stack Development, AI/ML systems, 
+    and game development. I focus on building practical, scalable solutions that solve real-world problems.
+  </p>
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card project">
+      <h3>Dispensary Management System</h3>
+      <p>Full-stack healthcare system for managing patients, medicines, and records.</p>
+      <div class="tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">HTML/CSS</span>
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>School LMS</h3>
+      <p>Platform for managing courses, students, and assignments.</p>
+      <div class="tags">
+        <span class="tag">Web Dev</span>
+        <span class="tag">Database</span>
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>AI/ML Models</h3>
+      <p>Built classification and regression models with data preprocessing pipelines.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">ML</span>
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>3D Game (Unity)</h3>
+      <p>Developed interactive 3D game environments with event-driven systems.</p>
+      <div class="tags">
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Java</div>
+    <div class="card">Python</div>
+    <div class="card">C++</div>
+    <div class="card">JavaScript</div>
+    <div class="card">HTML / CSS</div>
+    <div class="card">SQL</div>
+    <div class="card">Git & GitHub</div>
+    <div class="card">Machine Learning</div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
+  <p>Let’s work together or discuss opportunities</p>
+
+  <a href="mailto:basitayan25may2006@gmail.com">basitayan25may2006@gmail.com</a>
+  <a href="#">+92 332 5385276</a>
+</section>
+
+<footer>
+  © 2026 Abdul Basit | Software Engineer
+</footer>
+
+</body>
+</html>
