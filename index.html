@@ -51,7 +51,7 @@ nav a{
   width:130px;
   height:130px;
   border-radius:50%;
-  background:url('https://i.pravatar.cc/300') center/cover;
+  object-fit:cover;
   border:3px solid #38bdf8;
   box-shadow:0 0 40px #38bdf8;
   margin-bottom:20px;
@@ -167,7 +167,10 @@ footer{
 </nav>
 
 <section class="hero">
-  <div class="avatar"></div>
+
+  <!-- ✅ REAL IMAGE -->
+  <img src="profile.jpg" alt="Abdul Basit" class="avatar">
+
   <h1>Hi, I'm <span>Abdul Basit</span></h1>
   <p>AI-Augmented Full Stack Trainee</p>
   <p>I build real-world web systems, AI solutions & scalable applications</p>
@@ -175,8 +178,9 @@ footer{
   <div class="buttons">
     <a href="https://github.com/AbdulbasitKhan1947" class="btn github" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/abdul-basit-5b21a1276/" class="btn linkedin" target="_blank">LinkedIn</a>
-    <a href="CV Abdul Basit.pdf" class="btn cv" target="_blank">Download CV</a>
+    <a href="cv.pdf" class="btn cv" target="_blank">Download CV</a>
   </div>
+
 </section>
 
 <section class="section" id="about">
